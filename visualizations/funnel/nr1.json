@@ -1,0 +1,59 @@
+{
+  "schemaType": "VISUALIZATION",
+  "id": "funnel",
+  "displayName": "Funnel",
+  "description": "",
+  "configuration": [
+    {
+      "name": "nrqlQueries",
+      "title": "NRQL Queries",
+      "type": "collection",
+      "items": [
+        {
+          "name": "accountId",
+          "title": "Account ID",
+          "description": "Account ID to be associated with the query",
+          "type": "number"
+        },
+        {
+          "name": "query",
+          "title": "Query",
+          "description": "NRQL query for visualization",
+          "type": "nrql"
+        }
+      ]
+    },
+    {
+      "name": "direction",
+      "title": "Funnel Direction",
+      "description": "Define the direction of the funnel.",
+      "type": "enum",
+      "items": [
+        {
+          "title": "Vertical",
+          "value": "vertical"
+        },
+        {
+          "title": "Horizontal",
+          "value": "horizontal"
+        }
+      ]
+    },
+    {
+      "name": "gradient",
+      "title": "Color Gradient Direction",
+      "description": "Define the direction of the color gradient",
+      "type": "enum",
+      "items": [
+        {
+          "title": "Vertical",
+          "value": "vertical"
+        },
+        {
+          "title": "Horizontal",
+          "value": "horizontal"
+        }
+      ]
+    }
+  ]
+}

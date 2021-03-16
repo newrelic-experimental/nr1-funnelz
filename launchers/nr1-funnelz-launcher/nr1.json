@@ -1,0 +1,7 @@
+{
+    "schemaType": "LAUNCHER",
+    "id": "nr1-funnelz-launcher",
+    "displayName": "Nr1FunnelzLauncher",
+    "description": "Describe me",
+    "rootNerdletId": "nr1-funnelz-nerdlet"
+}

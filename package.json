@@ -1,0 +1,24 @@
+{
+    "private": true,
+    "name": "nr1-funnelz",
+    "version": "1.0.2",
+    "scripts": {
+        "start": "nr1 nerdpack:serve",
+        "test": "exit 0"
+    },
+    "nr1": {
+        "uuid": "53719087-eca9-4f87-9ad5-b2dc4082efef"
+    },
+    "dependencies": {
+        "funnel-graph-js": "^1.4.2",
+        "prop-types": "^15.6.2",
+        "react": "^16.6.3",
+        "react-dom": "^16.6.3",
+        "recharts": "^2.0.8"
+    },
+    "browserslist": [
+        "last 2 versions",
+        "not ie < 11",
+        "not dead"
+    ]
+}

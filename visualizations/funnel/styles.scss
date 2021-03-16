@@ -1,0 +1,29 @@
+@import '~funnel-graph-js/dist/css/main.css';
+@import '~funnel-graph-js/dist/css/theme.css';
+.svg-funnel-js .svg-funnel-js__labels .svg-funnel-js__label .label__value {
+  color:teal;
+}
+
+.svg-funnel-js .svg-funnel-js__labels .svg-funnel-js__label .label__title {
+  color: red;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.EmptyState,
+.ErrorState {
+  height: 100%;
+  text-align: center;
+
+  &-cardBody {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.ErrorState-headingText {
+  color: darkgrey;
+}
