@@ -104,7 +104,7 @@ const EmptyState = () => (
       >
         An example NRQL query you can try is:
       </HeadingText>
-      <code>FROM MobileBreadcrumb SELECT funnel(sessionId, WHERE name = 'login' AS 'Login', WHERE name='homepage' AS 'Homepage') since 1 day ago</code>
+      <code>FROM PageView SELECT funnel(session, WHERE pageUrl = 'http://ec2-52-25-184-180.us-west-2.compute.amazonaws.com:8080/', WHERE pageUrl = 'http://ec2-52-25-184-180.us-west-2.compute.amazonaws.com:8080/browse/phones/18989439', WHERE pageUrl = 'http://ec2-52-25-184-180.us-west-2.compute.amazonaws.com:8080/browse/phones/67424431') SINCE 1 day ago</code>
     </CardBody>
   </Card>
 );

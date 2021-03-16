@@ -1,33 +1,40 @@
 [![New Relic Experimental header](https://github.com/newrelic/opensource-website/raw/master/src/images/categories/Experimental.png)](https://opensource.newrelic.com/oss-category/#new-relic-experimental)
 
-# [Name of Project] [build badges go here when available]
+# [nr1-funnelz] 
 
->[Brief description - what is the project and value does it provide? How often should users expect to get releases? How is versioning set up? Where does this project want to go?]
+>NewRelic nr1 funnel visualization, based on funnel-graph.js
 
-## Installation
+![image info](./screenshots/horizontal.png)
+## Installation/Building
 
-> [Include a step-by-step procedure on how to get your code installed. Be sure to include any third-party dependencies that need to be installed separately]
+>install the modules  --  npm install
+>build the nerdpack   --  nr1 nerdpack:build
+>serve the nerdpack   --  nr1 nerdpack:serve
 
+> NOTE:  make sure to generate a new uuid for the nerdpack  --  nr1 nerdpack:uuid <br />
+> All nr1 commands found here: https://developer.newrelic.com/explore-docs/nr1-cli 
+
+## Customizations (Colors)
+> All color changes must happen at the code level. 
+> ### LABELS 
+> By default, funnel-graph.js has a theme file applied to it located within the funnel-graph.js module under the dist path (theme.css)
+> I have provided overrides of the labels css within the styles.css file located in the visualizations\funnel path.  
+> You will find three documented overrides there where you can change the colors / fonts..etc 
+> ### FUNNEL COLORS
+> These are hard coded values found in index.js, where the Funnel obj is created  (e.g. colors = {['#039595','red']} )
+> The array that is passed in can contain 1 to n values.   
+> A gradient is created accross the values. 
+> ### FUNNEL DIRECTION / GRADIENT DIRECTION
+> Both of these are controlled within the vizualization/nerdpack, so don't worry about these. 
 ## Getting Started
->[Simple steps to start working with the software similar to a "Hello World"]
-
-## Usage
->[**Optional** - Include more thorough instructions on how to use the software. This section might not be needed if the Getting Started section is enough. Remove this section if it's not needed.]
+> Follow the steps here https://developer.newrelic.com/explore-docs/nr1-cli to deploy the nerdpack with the visualization and add it to your dashboard.  
 
 
-## Building
 
->[**Optional** - Include this section if users will need to follow specific instructions to build the software from source. Be sure to include any third party build dependencies that need to be installed separately. Remove this section if it's not needed.]
-
-## Testing
-
->[**Optional** - Include instructions on how to run tests if we include tests with the codebase. Remove this section if it's not needed.]
 
 ## Support
 
 New Relic hosts and moderates an online forum where customers can interact with New Relic employees as well as other customers to get help and share best practices. Like all official New Relic open source projects, there's a related Community topic in the New Relic Explorers Hub. You can find this project's topic/threads here:
-
->Add the url for the support thread here
 
 ## Contributing
 We encourage your contributions to improve [project name]! Keep in mind when you submit your pull request, you'll need to sign the CLA via the click-through using CLA-Assistant. You only have to sign the CLA one time per project.
@@ -40,5 +47,5 @@ As noted in our [security policy](../../security/policy), New Relic is committed
 If you believe you have found a security vulnerability in this project or any of New Relic's products or websites, we welcome and greatly appreciate you reporting it to New Relic through [HackerOne](https://hackerone.com/newrelic).
 
 ## License
-[Project Name] is licensed under the [Apache 2.0](http://apache.org/licenses/LICENSE-2.0.txt) License.
->[If applicable: The [project name] also uses source code from third-party libraries. You can find full details on which libraries are used and the terms under which they are licensed in the third-party notices document.]
+nr1-funnelz is licensed under the [Apache 2.0](http://apache.org/licenses/LICENSE-2.0.txt) License.
+>[If applicable: The nr1-funnelz also uses source code from third-party libraries. You can find full details on which libraries are used and the terms under which they are licensed in the third-party notices document.]
