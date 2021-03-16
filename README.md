@@ -4,7 +4,7 @@
 
 >NewRelic nr1 funnel visualization, based on funnel-graph.js
 
-![example horizontal](/screenshots/horizontal.png)
+![example horizontal](https://github.com/newrelic-experimental/nr1-funnelz/blob/main/screenshots/horizontal.PNG)
 ## Installation/Building
 
 >install the modules  --  npm install
